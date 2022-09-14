@@ -5,16 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typing Speed Monster</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6d4a24a985.js" crossorigin="anonymous"></script>
+    <!-- Daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <h1 class="title"><img src="./logo.png" /></h1>
+    <!-- Header Area -->
+    <header>
+      <!-- Navbar -->
+      <nav class="border-gray-200 px-4 sm:px-4 py-2.5 shadow mb-2">
+          <div class="container flex flex-wrap justify-between items-center mx-auto">
+          <a href="index.html" class="flex items-center">
+              <img src="./logo.png" class="mr-3 h-6 sm:h-9" alt="Speed Type Logo">         
+          </a>
+          <div class="block" id="navbar-default">
+              <ul class="flex rounded-lg border-gray-100 flex-row space-x-8 mt-0 text-sm font-medium border-0">
+                  <li>
+                      <a href="index.html" class="block py-2 text-white" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                      <a href="blog.html" class="block py-2 text-white">Blog</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </nav>
+  </header>
     <div id="show-time">0 seconds</div>
 
     <div class="box-container">
@@ -37,7 +63,9 @@
     <div id="countdown"></div>
     <div id="modal-background" class="hidden"></div>
     <div id="result" class="hidden"></div>
-
+    
+    <!-- Flowbite Js -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="./history.js"></script>
     <script src="./script.js"></script>
   </body>
