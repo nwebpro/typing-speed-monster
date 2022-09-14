@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Monster - Blog</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6d4a24a985.js" crossorigin="anonymous"></script>
+    <!-- Flowbite -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Area -->
+    <header>
+        <!-- Navbar -->
+        <nav class="border-gray-200 px-4 sm:px-4 py-2.5 shadow mb-2">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="index.html" class="flex items-center">
+                <img src="./logo.png" class="mr-3 h-6 sm:h-9" alt="Speed Type Logo">         
+            </a>
+            <div class="block" id="navbar-default">
+                <ul class="flex rounded-lg border-gray-100 flex-row space-x-8 mt-0 text-sm font-medium border-0">
+                    <li>
+                        <a href="index.html" class="block py-2 text-white" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="block py-2 text-white">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-5">
+        <section>
+            <div class="container mx-auto">
+                <div class="w-full md:w-1/2 mx-auto my-10 bg-white p-10">
+                    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white text-gray-900" data-inactive-classes="text-gray-500">
+                        <h2 id="accordion-flush-heading-1">
+                            <button type="button" class="flex items-center justify-between w-full p-5 mb-3 font-medium text-left border-b border-gray-200 bg-white text-gray-900" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                                <span>Difference Between Local Storage and Session Storage?</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+                            <div class="py-5 font-light border-b border-gray-200">
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Local Storage</p>
+                                    <ul>
+                                        <li class="mb-3">This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends – that is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session).</li>
+                                        <li class="mb-3">The storage capacity of local storage is 5MB/10MB</li>
+                                        <li class="mb-3"><span class="font-bold text-black">Local storage has 4 methods:</span></li>
+                                        <li class="mb-3"><span class="font-bold text-black">setItem() Method –</span> This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.</li>
+                                        <li class="mb-3"><span class="font-bold text-black">getItem() Method –</span> This method takes one parameter that is key which is used to get the value stored with a particular key name.</li>
+                                        <li class="mb-3"><span class="font-bold text-black">removeItem() Method –</span> This is method is used to remove the value stored in the memory in reference to key.</li>
+                                        <li class="mb-3"><span class="font-bold text-black">clear() Method –</span> This method is used to clear all the values stored in localstorage.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Session Storage</p>
+                                    <ul>
+                                        <li class="mb-3">Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.</li>
+                                        <li class="mb-3">The storage capacity of session storage is 5MB</li>
+                                        <li><span class="font-bold text-black">Session Storage has 4 methods:</span></li>
+                                        <li class="mb-3"><span class="font-bold text-black">setItem() Method –</span> This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.</li>
+                                        <li class="mb-3"><span class="font-bold text-black">getItem() Method –</span> This method takes one parameter that is key which is used to get the value stored with a particular key name.</li>
+                                        <li class="mb-3"><span class="font-bold text-black">removeItem() Method –</span> This is method is used to remove the value stored in the memory in reference to key.</li>
+                                        <li class="mb-3"><span class="font-bold text-black">clear() Method –</span> This method is used to clear all the values stored in localstorage.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-2">
+                            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+                                <span>Difference between Map, Filter, Find and forEach in Javascript</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                            <div class="py-5 font-light border-b border-gray-200  ">
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">.map()</p>
+                                    <ul>
+                                        <li><span class="font-bold text-black">Map:</span> executes the same code on every element in an array and returns a new array with the updated elements.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">.filter()</p>
+                                    <ul>
+                                        <li><span class="font-bold text-black">Filter:</span> checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">.find()</p>
+                                    <ul>
+                                        <li><span class="font-bold text-black">Find:</span> Function .find() is also a search function like the previous but they differ in one small detail — this function returns only one match in an array. If in an array is more than one result, the function will return the first that has matched</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">.forEach()</p>
+                                    <ul>
+                                        <li><span class="font-bold text-black">forEach:</span> is used to execute the same code on every element in an array but does not change the array and it returns undefined.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-3">
+                            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left border-gray-200" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+                                <span>Differences between arrow functions and regular functions in JavaScript?</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                            <div class="py-5 font-light border-b border-gray-200  ">
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Syntax</p>
+                                    <ul>
+                                        <li>The first and most obvious difference between arrow functions and regular functions is their syntax. Not only do they look different, but arrow functions also provide an implicit return shorthand and allow parenthesis around a single argument to be omitted.</li>
+                                        <li><span class="font-bold">Execution context</span> Inside a regular function, execution context (i.e. the value of this) is dynamic. This means that the value of this depends on how the function was invoked (simple invocation, method invocation, indirect invocation or constructor invocation). On the other hand, an arrow function does not define its own execution context. This results in an arrow function's this being resolved lexically (i.e. the scope in which the arrow function was defined).</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Methods</p>
+                                    <ul>
+                                        <li>Due to arrow functions not defining their own execution context, they're not well-suited for usage as methods. However, thanks to the Class fields proposal, arrow functions can be used as methods inside classes, if your environment supports it.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Constructors</p>
+                                    <ul>
+                                        <li>Regular functions can be used as constructors, using the new keyword. Yet another consequence of the lexical resolution of this inside arrow functions is that they cannot be used as constructors. Using new with an arrow function results in a TypeError.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Arguments</p>
+                                    <ul>
+                                        <li>Another difference is the binding of the arguments object. Unlike regular functions, arrow functions don't have their own arguments object. A modern alternative that circumvents this limitation is the usage of rest parameters.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Other differences</p>
+                                    <ul>
+                                        <li>Finally, there are a couple of other differences that are not as important, but worth mentioning. These include the lack of a prototype property in arrow functions, as well as the fact that the yield keyword may not be used in an arrow function's body. A consequence of the latter is that arrow functions cannot be used as generators.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-4">
+                            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left border-gray-200" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+                                <span>Why we are use Template Literals in Javascript</span>
+                                <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                            <div class="py-5 font-light border-b border-gray-200  ">
+                                <div class="mb-3">
+                                    <p class="mb-2 text-gray-800 font-bold text-2xl">Template literals</p>
+                                    <ul>
+                                        <li>Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, for string interpolation with embedded expressions, and for special constructs called tagged templates.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Flowbite Js -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+  </body>
+</html>
