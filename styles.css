@@ -17,7 +17,7 @@ body {
 }
 
 #question {
-  height: 100px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,11 +35,11 @@ body {
 }
 
 #display {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 2rem;
   color: white;
   font-size: 32px;
   background-color: #171717;
@@ -198,6 +198,9 @@ button {
 }
 
 @media only screen and (max-width: 700px) {
+  #display{
+    font-size: 25px;
+  }
   .box-container {
     padding: 0 20px;
     width: 100%;
